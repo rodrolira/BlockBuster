@@ -1,0 +1,26 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="container bg-primary rounded rounded-1 text-secondary">
+  <h1 class="text-center">Clientes</h1>
+
+  <%= link_to "Nuevo Cliente", new_client_path, class: 'text-warning' %>
+
+  <div id="clients">
+    <table class="table table-bordered">
+      <thead>
+        <tr class="text-secondary">
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Película</th>
+          <th scope="col" colspan="3"></th>
+        </tr>
+      </thead>
+      <tbody class="text-secondary">
+        <% @clients.each do |client| %>
+          <%= render client%>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
