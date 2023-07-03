@@ -1,6 +1,6 @@
 <%= form_with(model: client) do |form| %>
   <% if client.errors.any? %>
-    <div style="color: red">
+    <div>
       <h2><%= pluralize(client.errors.count, "error") %> prohibido guardar a este cliente:</h2>
 
       <ul>
@@ -12,7 +12,7 @@
   <% end %>
 
   <div>
-    <%= form.label :name, "Nombre", style: "display: block" %>
+    <%= form.label :name, "Nombre", style: "display: block"%>
     <%= form.text_field :name %>
   </div>
 
@@ -22,6 +22,6 @@
   </div>
 
   <div>
-    <%= form.submit "Guardar Cambios"%>
+    <%= form.submit "Guardar Cambios", class:'btn btn-yellow mt-3'%>
   </div>
 <% end %>

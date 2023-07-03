@@ -1,0 +1,27 @@
+.blockbuster-primary,
+a,
+.btn-primary,
+.btn.btn-primary,
+.table {
+    background-color: #0d3fa9 !important;
+    color: #ffa903 !important;
+    --bs-navbar-color: #ffa903 !important;
+    --bs-navbar-hover-color: #ffab039e !important;
+    --bs-navbar-brand-color: #ffa903 !important;
+    --bs-navbar-brand-hover-color: #ffab039e !important;
+    --bs-table-border-color: #ffa903 !important;
+}
+
+.blockbuster-secondary,
+.btn,
+.btn-yellow  {
+    background-color: #ffa903 !important;
+    color: #0d3fa9 !important;
+    --bs-btn-color: #00a7ff !important;
+    --bs-btn-hover-color: #0d3ea9ae !important;
+}
+
+.btn,
+.btn-yellow {
+    color: #00a7ff !important;
+}

@@ -1,18 +1,18 @@
 <p style="color: green"><%= notice %></p>
 
   <div class="col-4 py-2 m-auto">
-    <div class="card bg-primary">
-      <div class="card-body text-secondary">
+    <div class="card blockbuster-primary">
+      <div class="card-body">
         <h2 class="card-title text-center"><%= @movie.name %></h2>
         <% if @movie.client.present? %>
           <strong>Cliente:</strong> <%= @movie.client.name %></p>
         <% else %>
           <p class="text-center"><strong>Cliente: </strong>No hay cliente asignado </p>
-          <h3 class="text-warning text-center"><strong> DISPONIBLE</strong></h3>
+          <h3 class="text-success fw-bold text-center"><strong> DISPONIBLE</strong></h3>
           <% end %>
         <div class="d-flex justify-content-around">
-          <%= link_to "Editar esta película", edit_movie_path(@movie), class: 'text-warning' %>
-          <%= link_to "Volver a películas", movies_path, class: 'text-warning' %>
+          <%= link_to "Editar esta película", edit_movie_path(@movie), class: 'btn btn-yellow' %>
+          <%= link_to "Volver a películas", movies_path, class: 'btn btn-yellow' %>
         </div>
       </div>
     </div>
@@ -20,5 +20,5 @@
 
 
 <div class="d-flex justify-content-center">
-  <%= button_to "Eliminar esta película", @movie, method: :delete, class: 'btn bg-primary text-secondary' %>
+  <%= button_to "Eliminar esta película", @movie, method: :delete, class: 'btn btn-primary' %>
 </div>

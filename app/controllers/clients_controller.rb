@@ -49,10 +49,16 @@ class ClientsController < ApplicationController
 
   # DELETE /clients/1 or /clients/1.json
   def destroy
+    @client = Client.find(params[:id])
+    @movie = @client.movies
+
     @client.destroy
 
     respond_to do |format|
-      format.html { redirect_to clients_url, notice: "El cliente ha sido eliminado con éxito." }
+      format.html {
+        flash[:notice] = "El cliente ha sido eliminado con éxito."
+        render inline: "<script>window.location='#{clients_url}';</script>".html_safe
+      }
       format.json { head :no_content }
     end
   end

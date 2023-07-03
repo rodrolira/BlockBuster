@@ -1,13 +1,13 @@
   <div class="col-4 py-2">
-    <div class="card bg-primary text-secondary">
+    <div class="card blockbuster-secondary">
       <div class="card-body">
-        <h5 class="card-title text-secondary"><%= movie.name %></h5>
+        <h5 class="card-title   "><%= movie.name %></h5>
         <% if @client.present? %>
           <p><strong>Cliente:</strong> <%= @movie.client.name%></p>
         <% else %>
           <p><strong>Cliente:</strong> No hay cliente asignado </p>
           <% end %>
-        <%= link_to "Mostrar esta película", movie, class: "btn btn-secondary" %>
+        <%= link_to "Mostrar esta película", movie, class: "btn btn-primary" %>
       </div>
     </div>
   </div>

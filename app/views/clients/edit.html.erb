@@ -1,12 +1,14 @@
+<div class="blockbuster-primary text-center w-50 m-auto mt-5 p-5 rounded">
 <h1>Editar Cliente</h1>
 
 <%= render "form", client: @client %>
 
 <br>
 
-<div>
-<button class="btn bg-primary">
-  <%= link_to "Mostrar cliente", @client %></button> |
+<div class="edit">
+<button class="btn btn-yellow">
+  <%= link_to "Mostrar cliente", @client, class:'btn-yellow' %></button> |
 
-  <button class="btn bg-primary"><%= link_to "Volver", clients_path %></button>
+  <button class="btn btn-yellow"><%= link_to "Volver", clients_path, class:'btn-yellow' %></button>
+</div>
 </div>

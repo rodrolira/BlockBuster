@@ -2,7 +2,7 @@
 
 <table class="table table-bordered">
 <thead>
-  <tr>
+  <tr class="text-center">
     <th scope="col">ID</th>
     <th scope="col">Nombre</th>
     <th scope="col">Edad</th>
@@ -15,10 +15,10 @@
     <td><%= @client.name %></td>
     <td><%= @client.age %></td>
     <td><%= @client.movies.last %></td>
-    <td class="d-flex">
-      <%= button_to link_to "Volver a clientes", clients_path %>
-      <%= button_to link_to "Editar cliente", edit_client_path(@client) %>
-      <%= button_to "Eliminar cliente", @client, method: :delete %>
+    <td class="d-flex text-center justify-content-center">
+      <%=  link_to "Volver a clientes", clients_path, class:'btn btn-yellow mx-2' %>
+      <%= link_to "Editar cliente", edit_client_path(@client), class: 'btn btn-yellow mx-2' %>
+      <%= button_to "Eliminar cliente", @client, method: :delete, class: 'btn btn-yellow mx-2' %>
     </td>
   </tr>
 </table>

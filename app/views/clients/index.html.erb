@@ -1,14 +1,14 @@
-<p style="color: green"><%= notice %></p>
+<p style="color: #0dcaf0" class="text-center"><%= notice %></p>
 
-<div class="container bg-primary rounded rounded-1 text-secondary">
+<div class="container rounded rounded-1 blockbuster-primary py-2 px-5">
   <h1 class="text-center">Clientes</h1>
 
-  <%= link_to "Nuevo Cliente", new_client_path, class: 'text-warning' %>
+  <%= link_to "Nuevo Cliente", new_client_path %>
 
   <div id="clients">
     <table class="table table-bordered">
       <thead>
-        <tr class="text-secondary">
+        <tr>
           <th scope="col">#</th>
           <th scope="col">Nombre</th>
           <th scope="col">Edad</th>
@@ -16,7 +16,7 @@
           <th scope="col" colspan="3"></th>
         </tr>
       </thead>
-      <tbody class="text-secondary">
+      <tbody>
         <% @clients.each do |client| %>
           <%= render client%>
         <% end %>

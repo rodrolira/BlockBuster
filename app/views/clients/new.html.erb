@@ -1,3 +1,4 @@
+<div class="blockbuster-primary text-center w-50 m-auto mt-5 p-5 rounded">
 <h1>Nuevo Cliente</h1>
 
 <%= render "form", client: @client %>
@@ -5,7 +6,8 @@
 <br>
 
 <div>
-<button class="btn bg-primary">
-  <%= link_to "Volver a clientes", clients_path %>
+<button class="btn btn-yellow">
+  <%= link_to "Volver a clientes", clients_path, class:'btn-yellow ' %>
   </button>
+</div>
 </div>
