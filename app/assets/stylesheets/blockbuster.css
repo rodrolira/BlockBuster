@@ -16,12 +16,9 @@ a,
 .btn,
 .btn-yellow  {
     background-color: #ffa903 !important;
-    color: #0d3fa9 !important;
+    color: #000 !important;
     --bs-btn-color: #00a7ff !important;
     --bs-btn-hover-color: #0d3ea9ae !important;
 }
 
-.btn,
-.btn-yellow {
-    color: #00a7ff !important;
-}
+
